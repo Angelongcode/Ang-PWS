@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--注意：UserDao和UserDao.xml是配对的 路径要一致-->
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <!--配置查询所有-->
+    <select id="getAllUser" resultType="com.example.demo.bean.User">
+        select username,password,name from  user ;
+    </select>
+    <select id="getPByU" resultType="String" parameterType="String">
+        select password from user where username = #{username}
+    </select>
+</mapper>

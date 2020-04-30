@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#div").slideDown(2000).fadeTo(3000,0.85);
+            $("#h").fadeIn(5000);
+        })
+    </script>
+
+</head>
+<body style="width: 1200px;margin: 0 auto; align-content: center" >
+<div style="background-image: url(img/loginbacground.jpg);display: inline-block;height: 562px;width: 1200px;background-size: 1200px 562px;background-repeat: no-repeat;">
+<div id="div" style=" display: none; background-color: azure;height: 300px;width: 400px;margin: 100px auto">
+    <div style="display: inline-block;margin: 10% 0 0 33%">
+        <h1 id="h" style="color: darkmagenta;display: none">欢迎登录</h1>
+    </div>
+    <div style="display: inline-block;margin: 2% 20% ;align-content: center">
+    <form action="/getpassword" name="login_form" method="post">
+        <table align="center">
+            <tr>
+                <td>用户名：</td>
+                <td id="td"><input style="border-radius: 25px" type="text" name="username" ></td>
+            </tr>
+            <tr><td height="10px"></td></tr>
+            <tr>
+                <td>密码：</td>
+                <td id="td"><input style="border-radius: 25px" type="password" name="password"></td>
+            </tr>
+            <tr><td height="20px"></td></tr>
+            <tr>
+                <td align="center" colspan="2" ><input style=" width: 50px;height: 30px;border-radius: 10px; background-color: coral" type="submit" value="登录"></td>
+                <!--<td align="center" ><input type="reset" value="重置"></td>-->
+            </tr>
+        </table>
+    </form>
+    </div>
+</div>
+</div>
+</body>
+</html>
