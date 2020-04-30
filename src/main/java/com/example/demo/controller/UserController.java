@@ -2,10 +2,14 @@ package com.example.demo.controller;
 
 import com.example.demo.bean.User;
 import com.example.demo.service.UserService;
+import org.apache.tomcat.util.net.AprEndpoint;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 //@RestController
@@ -31,5 +35,13 @@ public class UserController {
         }else{
             return "redirect:login/login.html";
         }
+    }
+
+    @PostMapping("/signUp")
+    public void addUser(@RequestParam(value = "username",required = false,defaultValue = "null") String username,
+                        @RequestParam(value = "password",required = false,defaultValue = "null") String password,
+                        @RequestParam(value = "name",required = false,defaultValue = "null") String name, HttpServletResponse response) throws IOException {
+        userService.addUser(username,password,name);
+        response.sendRedirect("login/login.html");
     }
 }

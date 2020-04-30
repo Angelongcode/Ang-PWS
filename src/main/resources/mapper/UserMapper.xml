@@ -11,4 +11,7 @@
     <select id="getPByU" resultType="String" parameterType="String">
         select password from user where username = #{username}
     </select>
+    <insert id="addUser" parameterType="String">
+        insert into user(username,password,name) values (#{username},#{password},#{name})
+    </insert>
 </mapper>

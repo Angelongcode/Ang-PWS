@@ -10,4 +10,6 @@ public interface UserMapper {
     List<User> getAllUser();
 
     String getPByU(String username,String password);
+
+    void addUser(String username,String password,String name);
 }

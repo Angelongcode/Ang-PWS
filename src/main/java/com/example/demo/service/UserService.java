@@ -20,4 +20,8 @@ public class UserService {
     public String getPByU(String username,String password){
         return userMapper.getPByU(username,password);
     }
+
+    public void addUser(String username,String password,String name){
+        userMapper.addUser(username,password,name);
+    }
 }

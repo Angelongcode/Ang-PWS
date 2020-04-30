@@ -8,7 +8,7 @@
     <script>
         $(document).ready(function () {
             $("#div").slideDown(2000).fadeTo(3000,0.8);
-            $("#h").fadeIn(5000);
+            $("#h").fadeIn(6000);
         })
     </script>
 
@@ -32,9 +32,10 @@
                 <td id="td"><input style="border-radius: 25px" type="password" name="password"></td>
             </tr>
             <tr><td height="20px"></td></tr>
-            <tr>
-                <td align="center" colspan="2" ><input style=" width: 50px;height: 30px;border-radius: 10px; background-color: coral" type="submit" value="登录"></td>
-                <!--<td align="center" ><input type="reset" value="重置"></td>-->
+            <tr style="width: 300px">
+                <td align="center" style="width: 150px" ><input style=" width: 70px;height: 30px;border-radius: 10px; background-color: coral" type="submit" value="登录"></td>
+                <!--<td align="right" ><input style="width: 70px;height: 30px;border-radius: 10px;background-color: coral" type="" value="注册"></td>-->
+                <td align="right"><input type="button" style="width: 70px;height: 30px;border-radius: 10px;background-color: coral" value="注册" onclick="location.href=('signUp.html')"></td>
             </tr>
         </table>
     </form>

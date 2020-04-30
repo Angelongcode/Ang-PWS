@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#div").slideDown(2000).fadeTo(3000,0.8);
+            $("#h").fadeIn(6000);
+        })
+    </script>
+
+</head>
+<body style="width: 1200px;margin: 0 auto; align-content: center" >
+<div style="background-image: url(img/loginbacground.jpg);display: inline-block;height: 562px;width: 1200px;background-size: 1200px 562px;background-repeat: no-repeat;">
+    <div id="div" style=" display: none; background-color: azure;height: 300px;width: 400px;margin: 100px auto">
+        <div style="display: inline-block;margin: 10% 0 0 33%">
+            <h1 id="h" style="color: darkmagenta;display: none">注册账号</h1>
+        </div>
+        <div style="display: inline-block;margin: 2% 20% ;align-content: center">
+            <form action="/signUp" name="login_form" method="post">
+                <table align="center">
+                    <tr>
+                        <td>用户名：</td>
+                        <td id="td"><input style="border-radius: 25px" type="text" name="username" ></td>
+                    </tr>
+                    <tr><td height="10px"></td></tr>
+                    <tr>
+                        <td>密码：</td>
+                        <td id="td"><input style="border-radius: 25px" type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td>网名：</td>
+                        <td id="td"><input style="border-radius: 25px" type="text" name="name"></td>
+                    </tr>
+                    <tr><td height="20px"></td></tr>
+                    <tr style="width: 300px">
+                        <td align="center" style="width: 150px" ><input style=" width: 70px;height: 30px;border-radius: 10px; background-color: coral" type="submit" value="注册"></td>
+                        <!--<td align="right" ><input style="width: 70px;height: 30px;border-radius: 10px;background-color: coral" type="" value="注册"></td>-->
+                        <td align="right"><input type="button" style="width: 70px;height: 30px;border-radius: 10px;background-color: coral" value="登陆" onclick="location.href=('login.html')"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
