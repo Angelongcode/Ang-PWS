@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	border: 0;
+}
+
+.out{
+	background: #F7F7F7;
+/*	background-size: auto 2000px;*/
+}
+
+.zhuti{
+	width: 980px;
+	height: 2279px;
+	background-color: #04C4BE;
+	margin:auto auto;
+}
+
+.top{
+	width: 980px;
+	height: 733px;
+	display: none;
+}
+
+.top1{
+	width: 980px;
+	height: 184px;
+	display: none;
+}
+
+.Angelong{
+	display: inline-block;
+	width: 400px;
+	height: 130px;
+	margin: 40px 0px 0 20px;
+}
+
+/*导航链接*/
+
+.titletable{
+	display: inline-block;
+	color: aliceblue;
+	font-weight:bold;
+	margin: 0 0 60px 70px;
+	font-size: 30px;
+}
+
+/*风景插图*/
+.top2{
+	width: 980px;
+	height: 550px;
+	text-align: center;
+	display: none;
+}
+
+.fenjing{
+	width: 566px;
+	height: 311px;
+	border: 20px #FFFFFF solid;
+	margin: 20px;
+	display: none;
+}
+
+.mingyan{
+	width: 800px;
+	height: 150px;
+}
+/*各导航的信息模块*/
+.middle{
+	background-color: #FFFFFF;
+	width: 980px;
+	height: 1392px;
+}
+
+.tubiao{
+	width: 980px;
+	height: 278px;
+}
+
+.jpg{
+	width: 91px;
+	height: 91px;
+	margin: 20px 20px 0 151px;
+}
+
+.fontAdd{
+	font-size: 110px;
+	color: #000000 ;
+	display: none;
+}
+
+/*Home下的解释性文字*/
+.jie{
+	width: 667px;
+	height: 100px;
+	background-color:#FFFFFF ;
+	margin: 0 0 10px 161px;
+}
+
+.pAdd{
+	text-indent: 2em;
+	font-size: 30px;
+	display:none
+}
+
+.tubiaoObject{
+	width: 980px;
+	height: 278px;
+}
+
+.tubiaoWeb{
+	width: 980px;
+	height: 278px;
+}
+
+.tubiaoCollect{
+	width: 980px;
+	height: 279px;
+}
+
+.tubiaoLearn{
+	width: 980px;
+	height: 279px;
+}
+
+.bottom{
+/*	background-color:aliceblue;*/
+	width: 980px;
+	height: 152px;
+	text-align: center;
+}
+
+.bottomAngelong{
+	width: 980px;
+	height: 50px;
+	font-size: 25px;
+	display: inline-block;
+	font-weight: bold;
+	margin: 30px 0 0 0;
+}
+
+.beizhu{
+	width: 980px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.a1:link,.a1:active{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.a2:link,.a2:active{
+	color: #000000;
+	text-decoration: none;
+	display:none;
+}

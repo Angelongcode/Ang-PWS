@@ -31,7 +31,7 @@ public class UserController {
     public String getPByU(@RequestParam(value = "username" ,required = false ,defaultValue = "null") String username,@RequestParam(value = "password",required = false,defaultValue = "null") String password){
         String upassword = userService.getPByU(username, password);
         if (upassword != null && upassword.equals(password)){
-            return "redirect:login/good.html";
+            return "redirect:home/index.html";
         }else{
             return "redirect:login/login.html";
         }

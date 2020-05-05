@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Angelong</title>
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<script src="../../public/jquery-1.11.3.min.js"></script>
+	<script src="./index.js"></script>
+</head>
+
+<body>
+	<div class = "out">
+		<div class = "zhuti">
+			<div class = "top">
+				<div class="top1">
+					<img src="Image/Angelong.jpg" alt="Angelong" class="Angelong" />
+					<table cellspacing="20px" class = "titletable" >
+						<tr>
+							<td><a href = "index.html" target = "_blank" class="a1">Home</a></td>
+							<td><a href = "https://github.com/Angelongone" target = "_blank" class="a1">Object</a></td>
+							<td><a href = "HTML/mywebs/meitancuiya/index.html" target = "_blank" class="a1">Web</a></td>
+							<td><a href = "https://blog.csdn.net/weixin_44439071" target = "_blank" class="a1">Collect</a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="top2">
+					<img id="roll" alt="风景图" src="Image/kebi.jpg" class="fenjing" />
+					<img src="Image/minyan.jpg" alt="我的名言" class="mingyan" />
+				</div>
+			</div>
+			<div class = "middle">
+				<div class = "tubiao">
+					<a href="HTML/Home.html" target="_blank" class="a2">
+					<img alt="主页" src="Image/home.jpg" class="jpg" />
+					<font id="fontAdd1" class="fontAdd">Home</font>
+					</a>
+					<div class="jie">
+						<p class = "pAdd">主页信息，主要以显示各页面的导航方向显示.包括Home、Object、Web、Collect。</p>
+					</div>
+				</div>
+				<div class="tubiaoObject">
+					<a href = "https://github.com/Angelongone" target = "_blank" class="a2">
+					<img alt="工程文件" src="Image/object.jpg" class="jpg" />
+					<font id="fontAdd2" class="fontAdd">Object</font>
+					</a>
+					<div class="jie">
+						<p class = "pAdd">我的代码工程文件，包括 Java、Python、C等；并保存在GitHub的代码仓库中；</p>
+					</div>
+				</div>
+				<div class="tubiaoWeb">
+					<a href = "HTML/mywebs/meitancuiya/index.html" target = "_blank" class="a2">
+					<img alt="MyWeb" src="Image/Web.jpg" class="jpg" />
+					<font id="fontAdd3" class="fontAdd">Wed</font>
+					</a>
+					<div class="jie">
+						<p class = "pAdd">此文件是本人自己的实验性网站，主要用于软件测试等；也用于Java后端的模拟实验；</p>
+					</div>
+				</div>
+				<div class="tubiaoCollect">
+					<a  href = "https://blog.csdn.net/weixin_44439071" target = "_blank" class="a2">
+					<img alt="我的收藏" src="Image/collect.jpg" class="jpg" />
+					<font id="fontAdd4" class="fontAdd">Collect</font>
+					</a>
+					<div class="jie">
+						<p class = "pAdd">自己在游走各大网站后，自己总结出对自己编程之路有极大帮助的网站，并将其收藏于此；</p>
+					</div>
+				</div>
+				<div class="tubiaoLearn">
+					<a  href = "HTML/TowShip.html" target = "_blank" class="a2">
+					<img alt="我的学习" src="Image/learn.jfif" class="jpg" />
+					<font id="fontAdd5" class="fontAdd">Learn</font>
+					</a>
+					<div class="jie">
+						<p class = "pAdd">为便于学后复习，此页面作为我的学习笔记页面，将刚学习的知识进行巩固；</p>
+					</div>
+				</div>
+			</div>
+			<div class = "bottom">
+				<div class="bottomAngelong">
+					<font>本网站所有者  Angelong</font>
+				</div>
+				<div class = "beizhu">
+					<font>本网站仅由于个人学习、实验；不可用于任何商业用途；  联系方式：2691827911@qq.com</font>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var doc = document.getElementById("roll");
+
+		function stp1(){
+			doc.setAttribute("src","Image/beijing.jpg");
+			setTimeout(stp2,3000);
+		}
+
+		function stp2(){
+			doc.setAttribute("src","Image/kebi.jpg");
+			setTimeout(stp3,3000);
+		}
+
+		function stp3(){
+			doc.setAttribute("src","Image/kebi1.jpg");
+			setTimeout(stp4,3000);
+		}
+
+		function stp4(){
+			doc.setAttribute("src","Image/back.jpg");
+			setTimeout(stp1,3000);
+		}
+
+		stp1();
+	</script>
+</body>
+</html>
